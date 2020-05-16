@@ -8,27 +8,9 @@
 </head>
 <body>
 <div class="container">
-    <nav class="navbar">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link h4" href="index.html">Sleeve Patches.com</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle h4" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Current Patches</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item h4" href="USArmy.html">US Army</a>
-                    <a class="dropdown-item h4" href="USArmyReserve.html">US Army Reserve</a>
-                    <a class="dropdown-item h4" href="USArmyNatGuard.html">US Army National Guard</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link h4" href="RetiredPatches.html">Retired Patches</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link h4" href="About.html">About</a>
-            </li>
-        </ul>
-    </nav>
+    <div id="navigation"></div>
+    <img src="./public/img/airbornes2.png" class="img-fluid"
+         alt="Airborne Patches">
     <h1 class="text-center">Welcome to SleevePatches.com</h1>
     <article id="introduction">
         <p class="h4">Sleeve Patches, otherwise known as Shoulder Sleeve Insignias (SSI) are worn by United States Army members and
@@ -43,6 +25,8 @@
             with a link to the Wikipedia page of the military unit.
         </p>
     </article>
+    <img src="./public/img/airbornes2.png" class="img-fluid"
+         alt="Airborne Patches">
 </div>
 
 
@@ -53,8 +37,13 @@
 
 
 <!-- Bootstrap, JQuery, and Popper -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $("#navigation").load("navigation.html");
+    });
+</script>
 </body>
 </html>
